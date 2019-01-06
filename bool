@@ -1,0 +1,44 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp17
+{
+	class Program
+	{
+		static void Main(string[] args)
+		{
+			int primenumber;
+			primenumber = Convert.ToInt32(Console.ReadLine());
+			if (Primenumber(primenumber))
+			{
+				Console.WriteLine("prime");
+			}
+			else
+			{
+				Console.WriteLine("Not prime");
+			}
+		}
+	
+	private static bool Primenumber(int primenumber)
+	{
+
+		
+		int i = 2;
+		while (primenumber % 2 != 0 && i < primenumber)
+		{
+			i++;
+		}
+		if (i < primenumber)
+		{
+			return false;
+		}
+		else
+		{
+			return true;
+			}
+		}
+	}
+}
